@@ -1,14 +1,14 @@
 ---
-title: "MATH 144 - Intermediate Statistics"
-subtitle: "Fall 2025"
+title: "MATH 14400x Business Statistics"
+subtitle: "Fall 2025 Syallabus"
 format:
-  html: default
+  #html: default
   pdf: default
 ---
 
 ***Instructor:*** Dr. Joash Geteregechi
 
-***Open Hours:*** Mon, Fri 12.00 - 1.00 pm (walk-ins allowed), or by [appointment](https://calendly.com/jmochogi/20min?).
+***Open Hours:*** Mon, Wed 12.00 - 1.00 pm (walk-ins allowed), or by [appointment](https://calendly.com/jmochogi/20min?).
 
 ***Course Website:*** [Click here](https://jmochogi.github.io/business-stat-f25/).
 

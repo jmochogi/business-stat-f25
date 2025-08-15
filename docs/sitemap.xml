@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://jmochogi.github.io/intermediate-stats/course-syllabus.html</loc>
-    <lastmod>2025-08-12T16:17:32.334Z</lastmod>
+    <lastmod>2025-08-15T01:07:53.896Z</lastmod>
   </url>
   <url>
     <loc>https://jmochogi.github.io/intermediate-stats/about.html</loc>
@@ -23,5 +23,9 @@
   <url>
     <loc>https://jmochogi.github.io/intermediate-stats/course-faq.html</loc>
     <lastmod>2025-08-09T02:02:57.023Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jmochogi.github.io/intermediate-stats/labs/lab_1.html</loc>
+    <lastmod>2025-08-15T16:41:58.069Z</lastmod>
   </url>
 </urlset>
