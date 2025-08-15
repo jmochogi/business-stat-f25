@@ -47,6 +47,7 @@ Your new R studio project interface will look as follows:
 -   ***Bottom Right Panel:*** The panel in the lower right contains tabs for browsing the files in your project folder, access help files for R functions, install and manage R packages, and inspecting visualizations through the viewer tab. By default, all data visualizations you make will appear directly below the code you used to create them. If you would rather your plots appear in the plots tab, you will need to change your global options.
 
 ### Functions and Arguments
+
 In R, a function is piece of code that performs a specific task. Functions take inputs (called arguments) and return outputs. For example, the `mean()` function calculates the average of a set of numbers. Try running the following code in the console:
 
 ```{r}
@@ -65,7 +66,6 @@ R is an open-source programming language, meaning that users can contribute pack
 
 -   The **openintro package** for data and custom functions with the openintro resources. You will notice that the readings frequently refer to data contained in the openintro Package. This is the package.
 
-
 ### Installing packages
 
 We now want to install packages in our project. To install a package in R, we can use the function `install.packages` and the package name as the argument as shown below:
@@ -79,6 +79,7 @@ To install **tidyverse**, run the following code in the console:
 ``` toml
 install.packages("tidyverse")
 ```
+
 **Exercise:** What code would you use to install the **openintro** package? Install the package.
 
 Note: You only need to install packages **once**, but you need to load them each time you relaunch RStudio. To call load (activate) the above installed packages, you use the following command:
@@ -140,13 +141,11 @@ We see that there is only one `Jane` entry in y. While you could easily count th
 
 Before we proceed, delete (or comment out) the `mean(y)` that you had written earlier.
 
-
 ## Exercises
 
 1)  Create an object (name it income) containing the following numerical elements: 750, 810, 680, 1200, 1500, 1399,1525.
 
-2)  Use R  to find the mean and the median of the values in #1 above.
-
+2)  Use R to find the mean and the median of the values in #1 above.
 
 ## Submission
 

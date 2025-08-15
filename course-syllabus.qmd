@@ -2,7 +2,7 @@
 title: "MATH 14400x Business Statistics"
 subtitle: "Fall 2025 Syallabus"
 format:
-  #html: default
+  html: default
   pdf: default
 ---
 
@@ -16,21 +16,21 @@ format:
 
 **Section 1** meets at the following times:
 
-| Day       | Room/Hall         | Time              |
-|-----------|-------------------|-------------------|
-| Monday    | Williams Hall 221 | 11:00  - 11:50 am |
-| Wednesday | Williams Hall 221 | 11:00  - 11:50 am |
-| Thursday | Williams Hall 302 | 10:00  - 10:50 am |
+| Day       | Room/Hall         | Time             |
+|-----------|-------------------|------------------|
+| Monday    | Williams Hall 221 | 11:00 - 11:50 am |
+| Wednesday | Williams Hall 221 | 11:00 - 11:50 am |
+| Thursday  | Williams Hall 302 | 10:00 - 10:50 am |
 | Friday    | Williams Hall 221 | 11:00 - 11:50 am |
 
 **Section 2** meets at the following times:
 
-| Day       | Room/Hall         | Time              |
-|-----------|-------------------|-------------------|
-| Monday    | Williams Hall 317 | 10:00  - 10:50 am|
-| Wednesday | Williams Hall 317 | 10:00  - 10:50 am |
-| Thursday | Williams Hall 302  | 11:00  - 9:50 am |
-| Friday    | Williams Hall 317 |10:00  - 10:50 am |
+| Day       | Room/Hall         | Time             |
+|-----------|-------------------|------------------|
+| Monday    | Williams Hall 317 | 10:00 - 10:50 am |
+| Wednesday | Williams Hall 317 | 10:00 - 10:50 am |
+| Thursday  | Williams Hall 302 | 11:00 - 9:50 am  |
+| Friday    | Williams Hall 317 | 10:00 - 10:50 am |
 
 ### Catalogue Description
 
@@ -38,13 +38,9 @@ A first course in statistics covering descriptive statistical techniques; introd
 
 ### Prerequisites and Credits
 
-Math placement in group 2 or higher, math placement assessment score of 54 or greater, or completion of 
-[MATH 10400](https://catalog.ithaca.edu/undergrad/coursesaz/math/), [MATH 10800](https://catalog.ithaca.edu/undergrad/coursesaz/math/), [MATH 11100](https://catalog.ithaca.edu/undergrad/coursesaz/math/) with a grade of C - (minus) or better. 
+Math placement in group 2 or higher, math placement assessment score of 54 or greater, or completion of [MATH 10400](https://catalog.ithaca.edu/undergrad/coursesaz/math/), [MATH 10800](https://catalog.ithaca.edu/undergrad/coursesaz/math/), [MATH 11100](https://catalog.ithaca.edu/undergrad/coursesaz/math/) with a grade of C - (minus) or better.
 
-The course is not open to students who have taken [MATH 14500](https://catalog.ithaca.edu/undergrad/coursesaz/math/) or 
-[MATH 21600](https://catalog.ithaca.edu/undergrad/coursesaz/math/)  <br> 
-**Attributes:** 2B, ESTS, NS, QL <br> **Number of Credits:** 4 Credits
-
+The course is not open to students who have taken [MATH 14500](https://catalog.ithaca.edu/undergrad/coursesaz/math/) or [MATH 21600](https://catalog.ithaca.edu/undergrad/coursesaz/math/) <br> **Attributes:** 2B, ESTS, NS, QL <br> **Number of Credits:** 4 Credits
 
 ### Course Format and Philosophy
 
@@ -57,7 +53,6 @@ This class will mostly be taught using a Flipped Model. A flipped classroom is a
 -   ***Catching up:*** If you miss a given class and you had completed your CPA, that means you will still have some understanding of the basic ideas. You do not miss out entirely and that means catching up is easier.
 
 ![Flipped Classroom Model](flip.jpeg)
-
 
 **Workload Expectation:**
 
@@ -89,9 +84,7 @@ We will use the following texts in this course. All books can be purchased in ha
 
 -   [R for Data Science, 2e](https://r4ds.hadley.nz/), Wickham, Çetinkaya-Rundel, Grolemund. O'Reilly, 2nd edition, 2023. Hard copy available on [Amazon](https://www.amazon.com/dp/1492097403?&tag=hadlwick-20).
 
-- [OpenIntro Statistics](https://leanpub.com/os)by David Diez, Mine Cetinkaya-Rundel, and Christopher Barr. OpenIntro Inc., $4^{th}$ Edition, 2019. If you want a free copy, adjust the slider to 0. Hard copy available on [Amazon](https://www.amazon.com/OpenIntro-Statistics-Fourth-color-interior/dp/1943450226/ref=sr_1_1?crid=1ZSLGEV5B091L&dib=eyJ2IjoiMSJ9.aNYY-hcyRXQwV_7MIBRe888ggAKPJQvxRp6WEFgh38uMU-UenArv1ZMnFumj8Pdl0lWDpxtAjApdZI5S3rQJ2Q.lcBJYEVdBLBh8sMUNmGD6gjMJ4i-5IR3LPUoPyhZ4hA&dib_tag=se&keywords=openintro+statistics+fourth+edition&qid=1754933796&sprefix=openintro+s%2Caps%2C87&sr=8-1).
-
-
+-   [OpenIntro Statistics](https://leanpub.com/os) by David Diez, Mine Cetinkaya-Rundel, and Christopher Barr. OpenIntro Inc., $4^{th}$ Edition, 2019. If you want a free copy, adjust the slider to 0. Hard copy available on [Amazon](https://www.amazon.com/OpenIntro-Statistics-Fourth-color-interior/dp/1943450226/ref=sr_1_1?crid=1ZSLGEV5B091L&dib=eyJ2IjoiMSJ9.aNYY-hcyRXQwV_7MIBRe888ggAKPJQvxRp6WEFgh38uMU-UenArv1ZMnFumj8Pdl0lWDpxtAjApdZI5S3rQJ2Q.lcBJYEVdBLBh8sMUNmGD6gjMJ4i-5IR3LPUoPyhZ4hA&dib_tag=se&keywords=openintro+statistics+fourth+edition&qid=1754933796&sprefix=openintro+s%2Caps%2C87&sr=8-1).
 
 ### Computing:
 
@@ -129,7 +122,6 @@ CPAs are done ***prior*** to class. They involve completing short readings or ac
 
 MyOpenMath is an online homework system that will be used for this course. You will be required to complete homework assignments on MyOpenMath about once a week for most of the semester. The homework assignments will be based on the material covered in class and in the readings. You are expected to complete all homework assignments by the due date (indicated on Canvas).
 
-
 ### Labs
 
 In labs, you will apply what you’ve learned in class to complete data analysis tasks. You may discuss lab assignments with other students; however, lab should be completed and submitted individually. Lab assignments will be submitted as reproducible reports, which allows someone else to rerun and check your analyses. You will learn more about this in class.
@@ -158,15 +150,12 @@ The exams will focus on both conceptual understanding of the content and applica
 
 The final exam for this course will have two parts:
 
-a. **Final Portfolio:**
-A portfolio with the following:
+a.  **Final Portfolio:** A portfolio with the following:
 
 -   Revised work (if necessary) on both mid-term exams. Again, you should point out the errors on every problem and explain how your revisions fix your errors.
 -   A reflective essay on your main takeaways from the course and how you may implement that knowledge in your field or other real-life situations.
 
-
-b. **Oral Presentation:**
-You will be required to give a 10-minute oral presentation on a question related to the course content. This will be an individual presentation and you will be expected to use R to perform the analysis. The question will be sent to you at least 24 hours before your scheduled presentation time and solutions must be submitted to Canvas by 8.00 am on the day of the presentation. You should be prepared to answer questions from your peers and the instructor.
+b.  **Oral Presentation:** You will be required to give a 10-minute oral presentation on a question related to the course content. This will be an individual presentation and you will be expected to use R to perform the analysis. The question will be sent to you at least 24 hours before your scheduled presentation time and solutions must be submitted to Canvas by 8.00 am on the day of the presentation. You should be prepared to answer questions from your peers and the instructor.
 
 More information on the final Exam will be provided later in the semester.
 
@@ -222,7 +211,7 @@ Abide by the following guidelines:
 
     -   *Cognitive dimension:* Using AI tools should make you more efficient and productive rather than hampering your ability to think clearly and critically.
 
-    -   *Ethical dimension:* Students using AI should be transparent about their use and make sure it aligns with academic integrity. You are ultimately responsible for the work you turn in; it should reflect your understanding of the course content. 
+    -   *Ethical dimension:* Students using AI should be transparent about their use and make sure it aligns with academic integrity. You are ultimately responsible for the work you turn in; it should reflect your understanding of the course content.
 
     -   **✅ AI tools for code:** From time to time, I will demonstrate how to use AI for coding and will discuss how to use the tool responsibly without losing sight of the learning objectives.
 
@@ -335,13 +324,11 @@ Ithaca College values diversity because it enriches our community and the myriad
 
 ## Sexual Harassment and Assault Response & Education (SHARE)
 
-Please note that if you disclose an experience related to sexual misconduct (including sexual assault, dating violence, and/or stalking, sexual harassment or sex-based discrimination, your professor is obligated to inform the Title IX coordinator, Linda Koenig (lkoenig@ithaca.edu), of all relevant information, including your name. The college will take initial steps to address the incident(s), protect, and, support those directly affected, and enhance the safety of our community. The Title IX coordinator will work with you to determine the best way to proceed. Information shared in class assignments, class discussions, and at public events do not constitute an official disclosure, and faculty and staff do not have to report these to the Title IX Coordinator. Faculty and staff should be sure that access to campus and community resources related to sexual misconduct are available to students in the case these subjects do arise. Any other disclosure to faculty and staff needs to be reported to the Title IX Coordinator. For more information: <https://www.ithaca.edu/share>. 
+Please note that if you disclose an experience related to sexual misconduct (including sexual assault, dating violence, and/or stalking, sexual harassment or sex-based discrimination, your professor is obligated to inform the Title IX coordinator, Linda Koenig (lkoenig\@ithaca.edu), of all relevant information, including your name. The college will take initial steps to address the incident(s), protect, and, support those directly affected, and enhance the safety of our community. The Title IX coordinator will work with you to determine the best way to proceed. Information shared in class assignments, class discussions, and at public events do not constitute an official disclosure, and faculty and staff do not have to report these to the Title IX Coordinator. Faculty and staff should be sure that access to campus and community resources related to sexual misconduct are available to students in the case these subjects do arise. Any other disclosure to faculty and staff needs to be reported to the Title IX Coordinator. For more information: <https://www.ithaca.edu/share>.
 
 ## Religious Observance
 
-At Ithaca College, we uphold diverse religious and spiritual traditions - each with its own set of beliefs, practices, and observances that are part of our community. If you anticipate needing accommodations for attending class, taking exams, or submitting assignments due to a religious observance, you can work directly with me to accommodate your needs. Please share the potential dates with me as soon as possible so we can plan for your success in our class.
-The Office of Religious and Spiritual Life is also available to support you as you navigate your religious observances at IC. If you have questions or suggestions, please contact the Office of Religious and Spiritual Life at spirituallife@ithaca.edu. More information on religious observances and accommodations at IC is available here.
-
+At Ithaca College, we uphold diverse religious and spiritual traditions - each with its own set of beliefs, practices, and observances that are part of our community. If you anticipate needing accommodations for attending class, taking exams, or submitting assignments due to a religious observance, you can work directly with me to accommodate your needs. Please share the potential dates with me as soon as possible so we can plan for your success in our class. The Office of Religious and Spiritual Life is also available to support you as you navigate your religious observances at IC. If you have questions or suggestions, please contact the Office of Religious and Spiritual Life at spirituallife\@ithaca.edu. More information on religious observances and accommodations at IC is available here.
 
 \newpage
 
@@ -367,7 +354,7 @@ The Office of Religious and Spiritual Life is also available to support you as y
 
 -   **Oct 17-18:** Fall break - No classes
 
--  **Oct 31:** Last Day to Withdraw with "W" in Fall Semester Courses
+-   **Oct 31:** Last Day to Withdraw with "W" in Fall Semester Courses
 
 -   **Nov 01:** Last Day to Withdraw with "W"
 
@@ -382,6 +369,5 @@ The Office of Religious and Spiritual Life is also available to support you as y
 -   **Dec 12:** Final Exams begin
 
 -   **Dec 11:** Final portfolio due
-
 
 For more information on dates, see the full [Ithaca College Calendar](https://www.ithaca.edu/academics/registrar/academic-calendars).
