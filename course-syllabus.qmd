@@ -338,7 +338,7 @@ At Ithaca College, we uphold diverse religious and spiritual traditions - each w
 
 -   **Aug 29:** Last day to audit a course
 
--   **Aug 31:** Last day for Add/Drop
+-   **Aug 31:** Last day to Add/Drop course
 
 -   **Sep 01:** Labor Day (No classes)
 
@@ -346,13 +346,9 @@ At Ithaca College, we uphold diverse religious and spiritual traditions - each w
 
 -   **Oct 2-3:** Fall Break - No classes
 
--   **Oct 09:** Exam 1 (in-class)
-
--   **Oct 10:** Exam 1 take-home due
-
--   **Oct 13:** Midterm grades available online
-
 -   **Oct 17-18:** Fall break - No classes
+
+-   **Oct 22:** Midterm grades available online
 
 -   **Oct 31:** Last Day to Withdraw with "W" in Fall Semester Courses
 
@@ -368,6 +364,5 @@ At Ithaca College, we uphold diverse religious and spiritual traditions - each w
 
 -   **Dec 12:** Final Exams begin
 
--   **Dec 11:** Final portfolio due
 
 For more information on dates, see the full [Ithaca College Calendar](https://www.ithaca.edu/academics/registrar/academic-calendars).
