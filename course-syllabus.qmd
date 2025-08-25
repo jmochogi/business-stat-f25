@@ -3,7 +3,7 @@ title: "MATH 14400x Business Statistics"
 subtitle: "Fall 2025 Syallabus"
 format:
   html: default
-  pdf: default
+  #pdf: default
 ---
 
 ***Instructor:*** Dr. Joash Geteregechi 
