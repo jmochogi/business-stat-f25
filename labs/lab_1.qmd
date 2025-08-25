@@ -48,7 +48,7 @@ Your new R studio project interface will look as follows:
 
 ### Functions and Arguments
 
-In R, a function is piece of code that performs a specific task. Functions take inputs (called arguments) and return outputs. For example, the `mean()` function calculates the average of a set of numbers. Try running the following code in the console:
+In R, a function is piece of code that performs a specific task. Functions take inputs (called arguments) and return outputs. For example, the `mean()` function takes a series of numerical values as the input and returns calculates their average. Try running the following code in the console:
 
 ```{r}
 mean(3,4,5)
@@ -131,15 +131,15 @@ Did you get an error message in red?
 
 Well, programming languages generally produce error messages when you try to perform an inappropriate operation or if there is a mistake in the code. Error messages are a good way to learn what you did wrong. In this case, the mean/average of the object `y` does not make sense because the entries of `y` are not numerical.
 
-You can, however, perform other operations on y. For example, you may want to know how many `Jane` entries are in y. To do this, you may simply tabulate the entries in y as shown below:
+You can, however, perform other operations on y. For example, you can use the `table` function to tabulate the entries in `y`. This may be useful in cases where one is interested in the frequencies of each entry. Run the command below:
 
 ```{r}
 table(y)
 ```
 
-We see that there is only one `Jane` entry in y. While you could easily count the number of `Jane` entries in y, the `table` function is useful when you have many entries and you want to know how many times each entry appears.
+This is known as a frequency table. For example, we see that there is only one `Jane` entry in `y`. While you could easily count the number of `Jane` entries in y, the `table` function is useful when you have bigger data sets.
 
-Before we proceed, delete (or comment out) the `mean(y)` that you had written earlier.
+Delete (or comment out) the `mean(y)` that you had written earlier.
 
 ## Exercises
 

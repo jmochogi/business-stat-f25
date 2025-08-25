@@ -328,7 +328,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </ul>
 <section id="functions-and-arguments" class="level3">
 <h3 class="anchored" data-anchor-id="functions-and-arguments">Functions and Arguments</h3>
-<p>In R, a function is piece of code that performs a specific task. Functions take inputs (called arguments) and return outputs. For example, the <code>mean()</code> function calculates the average of a set of numbers. Try running the following code in the console:</p>
+<p>In R, a function is piece of code that performs a specific task. Functions take inputs (called arguments) and return outputs. For example, the <code>mean()</code> function takes a series of numerical values as the input and returns calculates their average. Try running the following code in the console:</p>
 <div class="cell">
 <details open="" class="code-fold">
 <summary>Code</summary>
@@ -416,7 +416,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 <p>Did you get an error message in red?</p>
 <p>Well, programming languages generally produce error messages when you try to perform an inappropriate operation or if there is a mistake in the code. Error messages are a good way to learn what you did wrong. In this case, the mean/average of the object <code>y</code> does not make sense because the entries of <code>y</code> are not numerical.</p>
-<p>You can, however, perform other operations on y. For example, you may want to know how many <code>Jane</code> entries are in y. To do this, you may simply tabulate the entries in y as shown below:</p>
+<p>You can, however, perform other operations on y. For example, you can use the <code>table</code> function to tabulate the entries in <code>y</code>. This may be useful in cases where one is interested in the frequencies of each entry. Run the command below:</p>
 <div class="cell">
 <details open="" class="code-fold">
 <summary>Code</summary>
@@ -428,8 +428,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     1     1     1     1     1     1     1     1 </code></pre>
 </div>
 </div>
-<p>We see that there is only one <code>Jane</code> entry in y. While you could easily count the number of <code>Jane</code> entries in y, the <code>table</code> function is useful when you have many entries and you want to know how many times each entry appears.</p>
-<p>Before we proceed, delete (or comment out) the <code>mean(y)</code> that you had written earlier.</p>
+<p>This is known as a frequency table. For example, we see that there is only one <code>Jane</code> entry in <code>y</code>. While you could easily count the number of <code>Jane</code> entries in y, the <code>table</code> function is useful when you have bigger data sets.</p>
+<p>Delete (or comment out) the <code>mean(y)</code> that you had written earlier.</p>
 </section>
 <section id="exercises" class="level2">
 <h2 class="anchored" data-anchor-id="exercises">Exercises</h2>
