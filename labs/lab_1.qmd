@@ -14,15 +14,19 @@ format:
 
 # `Hello, World!` {.unnumbered}
 
-It is possible that some of you have heard/seen the phrase, `Hello, World!`, before. That is usually the first thing you learn in programming, i.e., to learn to write a computer program to print this sentence to screen. In this lab, we will not print `Hello, World!` to the screen. Instead, we will learn how to use R (via RStudio) to perform statistical analyses and to write reports in order to communicate the insights learned from data. While the analysis involves writing computer code, it is in no way going to involve writing computer programs. The goal of today's lab is to introduce you to R and RStudio. You will learn to access and use RStudio, as well as perform the basic functions regarding statistical analysis. To clarify which is which: R is the name of the programming language itself and RStudio is a convenient interface (Integrated Development Environment or IDE) for working with R. I like to think about R as the car engine and RStudio as a nice driver dashboard. The engine drives the car, but the dashboard makes it easier for the driver to control the car. Most R users work with RStudio.
+It is possible that some of you have heard/seen the phrase, `Hello, World!`, before. That is usually the first thing you learn in programming, i.e., to learn to write a computer program to print this sentence to screen. In this course, we will not print `Hello, World!` to the screen. Instead, we will learn how to use R (via RStudio) to perform statistical analyses and to write reports in order to communicate the insights learned from data. While the analysis involves writing computer code, it is in no way going to involve writing computer programs. The goal of today's lab is to introduce you to R and RStudio. You will learn to access and use RStudio, as well as perform the basic functions regarding statistical analysis. To clarify which is which: R is the name of the programming language itself and RStudio is a convenient interface (Integrated Development Environment or IDE) for working with R. I like to think about R as the car engine and RStudio as a nice driver dashboard. The engine drives the car, but the dashboard makes it easier for the driver to control the car. Most R users work with RStudio.
 
 ![Car Engine and Dashboard](images/r_vs_rstudio.png)
 
-We will work with the cloud (online) version of RStudio. To access RStudio online, click on the link <https://posit.cloud> to create an account or to sign in if you already have an account.
+We will work with the cloud (online) version of RStudio. 
+
+## `Accessing RStudio Cloud` {.unnumbered}
+
+To access RStudio online, click on the link <https://posit.cloud> to create an account or to sign in if you already have an account.
 
 ## Creating a new Project
 
-After signing in to R studio, our next step is to create a new project. You can think of a project as a folder or simply a collection of files. Our project will be called "MATH 246 Fall 2024". Each lab that you complete will be saved in this project. To create the project, you start by clicking on "New Project" and then change the default name (UNTITLED PROJECT) to "MATH 144 Fall 2025".
+After signing in to R studio, our next step is to create a new project. You can think of a project as a folder or simply a collection of files/files with a specific goal in mind. Our project will be called "MATH 144 Fall 2025". The labs that you do will be saved in this project. To create the project, you start by clicking on "New Project" and then change the default name (UNTITLED PROJECT) to "MATH 144 Fall 2025".
 
 Yay! You now have your project ready.
 
@@ -46,21 +50,27 @@ Your new R studio project interface will look as follows:
 
 -   ***Bottom Right Panel:*** The panel in the lower right contains tabs for browsing the files in your project folder, access help files for R functions, install and manage R packages, and inspecting visualizations through the viewer tab. By default, all data visualizations you make will appear directly below the code you used to create them. If you would rather your plots appear in the plots tab, you will need to change your global options.
 
+### Creating a new file
+
+We want to create a new file (an R script) to write our code. To create a new file, click on the "File" menu, then click on "New File", and then click on "R Script". A new tab will open in the left panel. This is where you will write your code. You can save this file by clicking on the "File" menu and then clicking on "Save". Save the file as "lab_1_Explorations". If you did this correctly, a new file will appear under the files section (lower right) of the project.
+
+
 ### Functions and Arguments
 
-In R, a function is piece of code that performs a specific task. Functions take inputs (called arguments) and return outputs. For example, the `mean()` function takes a series of numerical values as the input and returns calculates their average. Try running the following code in the console:
+In R, a `function` is piece of code that performs a specific task. Functions take inputs (called arguments) and return outputs. For example, the `mean()` function takes a series of numerical values as the input and returns their average. Try running the following code:
 
 ```{r}
 mean(3,4,5)
 ```
 
-Notice that this function takes three arguments (3, 4, and 5) and returns the mean of those numbers as the output. The general syntax for a function is `function_name(argument1, argument2, ...)`. In this case, `mean` is the function name and `3`, `4`, and `5` are the arguments.
+The inputs of a function are called `arguments`. Here, we have three arguments (3, 4, and 5). Note that the arguments are separated by commas.
+The general syntax for a function is `function_name(argument1, argument2, ...)`. In this case, `mean` is the function name and `3`, `4`, and `5` are the arguments.
 
 You will learn more about functions and arguments as we progress through the course. For now, it is important to understand that functions are the building blocks of R programming, and they allow you to perform complex tasks with simple commands.
 
 ## R packages
 
-R is an open-source programming language, meaning that users can contribute packages that make our lives easier, and we can use them for free. Packages are simply pre-written code meant to serve specific purposes and may contain other packages inside them. Packages may also contain data sets. Packages are stored in a directory called "Library". For most labs in this course, we will use the following two packages:
+R is an open-source programming language, meaning that users can contribute packages that make our lives easier, and we can use them for free. Packages are simply pre-written code meant to serve specific purposes and may contain other packages inside them. Packages may also contain data sets. Packages are stored in a directory called `Library`. For most labs in this course, we will use the following two packages:
 
 -   The **tidyverse package** is a very popular "umbrella" package which houses a suite of many different R packages: for data wrangling (including tidying) and data visualization.
 
@@ -73,8 +83,9 @@ We now want to install packages in our project. To install a package in R, we ca
 ```         
 install.packages("package name")
 ```
+We run this command in the console because we only need to install packages once per project. After installing a package, we need to load (activate) it each time we relaunch RStudio.
 
-To install **tidyverse**, run the following code in the console:
+To install **tidyverse**, run the following code in the **console**:
 
 ``` toml
 install.packages("tidyverse")
@@ -82,18 +93,17 @@ install.packages("tidyverse")
 
 **Exercise:** What code would you use to install the **openintro** package? Install the package.
 
-Note: You only need to install packages **once**, but you need to load them each time you relaunch RStudio. To call load (activate) the above installed packages, you use the following command:
+Note: To launch (activate) the `tidyverse` package, we use the following command:
 
 ``` toml
 library(tidyverse)
-library(openintro)
 ```
 
 ***Why Tidyverse?*** We are choosing to use the tidyverse package collection because it consists of a set of packages necessary for different aspects of working with data, anything from loading data to wrangling data to visualizing data to analyzing data. Additionally, these packages share common philosophies and are designed to work together. The tidyverse workflow makes coding feel like a natural language. You can find more about the packages in the tidyverse at tidyverse.org.
 
 ## Creating vectors in R
 
-Suppose we want to find the mean of the numbers 23,24,26,19,18,25,21, and 39. While it might be easy to use the function `mean(23,24,...)`, this might pose problems if the list is long. A common thing to do is to create a container to put all these numbers. The container is known as a vector. See coed below for creating a container for the list above:
+Suppose we want to find the mean of the numbers 23,24,26,19,18,25,21, and 39. You can use the command `mean(23,24,...)`, but this might not be the most efficient way if the list is long. A common thing to do is to create a `container` to put all these numbers. Such a container is known as a `vector`. Specifically, this is a `numerical vector`. See code below for creating a vector consisting of the above list:
 
 ```{r}
 x <- c(23,24,26,19,18,25,21, 39) 
