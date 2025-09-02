@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>lab_1 – MATH 144 - Business Statistics</title>
+<title>Lab 2: Introduction to Quarto, Tidyverse and ggplot2 – MATH 144 - Business Statistics</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -63,8 +63,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../labs/lab_2.html" rel="next">
-<link href="../course-faq.html" rel="prev">
+<link href="../labs/lab_1.html" rel="prev">
 <script src="../site_libs/quarto-html/quarto.js"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -105,13 +104,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 }</script>
 
 
-<meta property="og:title" content="MATH 144 - Business Statistics">
+<meta property="og:title" content="Lab 2: Introduction to Quarto, Tidyverse and ggplot2 – MATH 144 - Business Statistics">
 <meta property="og:description" content="Homepage for MATH 144 - Business Statistics, Fall 205.">
-<meta property="og:image" content="https://jmochogi.github.io/intermediate-stats/labs/images/r_vs_rstudio.png">
+<meta property="og:image" content="https://jmochogi.github.io/intermediate-stats/labs/images/a4.png">
 <meta property="og:site_name" content="MATH 144 - Business Statistics">
-<meta property="og:image:height" content="624">
-<meta property="og:image:width" content="1516">
-<meta name="twitter:title" content="MATH 144 - Business Statistics">
+<meta property="og:image:height" content="335">
+<meta property="og:image:width" content="640">
+<meta name="twitter:title" content="Lab 2: Introduction to Quarto, Tidyverse and ggplot2 – MATH 144 - Business Statistics">
 <meta name="twitter:description" content="Homepage for MATH 144 - Business Statistics, Fall 205.">
 <meta name="twitter:image" content="https://jmochogi.github.io/intermediate-stats/labs/img/twitter-card.png">
 <meta name="twitter:creator" content="@jmochogi">
@@ -127,7 +126,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../labs/lab_1.html">Labs</a></li><li class="breadcrumb-item"><a href="../labs/lab_1.html">Lab 1</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../labs/lab_1.html">Labs</a></li><li class="breadcrumb-item"><a href="../labs/lab_2.html">Lab 2</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -218,13 +217,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../labs/lab_1.html" class="sidebar-item-text sidebar-link active">
+  <a href="../labs/lab_1.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Lab 1</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../labs/lab_2.html" class="sidebar-item-text sidebar-link">
+  <a href="../labs/lab_2.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Lab 2</span></a>
   </div>
 </li>
@@ -256,33 +255,34 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#hello-world" id="toc-hello-world" class="nav-link active" data-scroll-target="#hello-world"><code>Hello, World!</code></a>
+  <li><a href="#getting-started-with-quarto" id="toc-getting-started-with-quarto" class="nav-link active" data-scroll-target="#getting-started-with-quarto">Getting Started with Quarto</a></li>
+  <li><a href="#parts-of-a-quarto-file" id="toc-parts-of-a-quarto-file" class="nav-link" data-scroll-target="#parts-of-a-quarto-file">Parts of a Quarto file</a>
   <ul class="collapse">
-  <li><a href="#accessing-rstudio-cloud" id="toc-accessing-rstudio-cloud" class="nav-link" data-scroll-target="#accessing-rstudio-cloud"><code>Accessing RStudio Cloud</code></a></li>
-  <li><a href="#creating-a-new-project" id="toc-creating-a-new-project" class="nav-link" data-scroll-target="#creating-a-new-project">Creating a new Project</a></li>
-  <li><a href="#the-r-studio-interface" id="toc-the-r-studio-interface" class="nav-link" data-scroll-target="#the-r-studio-interface">The R studio Interface</a>
-  <ul class="collapse">
-  <li><a href="#creating-a-new-file" id="toc-creating-a-new-file" class="nav-link" data-scroll-target="#creating-a-new-file">Creating a new file</a></li>
-  <li><a href="#functions-and-arguments" id="toc-functions-and-arguments" class="nav-link" data-scroll-target="#functions-and-arguments">Functions and Arguments</a></li>
+  <li><a href="#yaml-header" id="toc-yaml-header" class="nav-link" data-scroll-target="#yaml-header"><code>YAML Header</code></a></li>
+  <li><a href="#plain-text" id="toc-plain-text" class="nav-link" data-scroll-target="#plain-text"><code>Plain Text</code></a></li>
+  <li><a href="#code-chunks" id="toc-code-chunks" class="nav-link" data-scroll-target="#code-chunks"><code>Code Chunks</code></a></li>
   </ul></li>
-  <li><a href="#r-packages" id="toc-r-packages" class="nav-link" data-scroll-target="#r-packages">R packages</a>
+  <li><a href="#errors-and-code-sequencing" id="toc-errors-and-code-sequencing" class="nav-link" data-scroll-target="#errors-and-code-sequencing">Errors and Code Sequencing</a></li>
+  <li><a href="#using-code-chunks" id="toc-using-code-chunks" class="nav-link" data-scroll-target="#using-code-chunks">Using Code Chunks</a></li>
+  <li><a href="#loading-data-from-a-package" id="toc-loading-data-from-a-package" class="nav-link" data-scroll-target="#loading-data-from-a-package">Loading Data from a Package</a></li>
+  <li><a href="#some-analyses" id="toc-some-analyses" class="nav-link" data-scroll-target="#some-analyses">Some Analyses</a>
   <ul class="collapse">
-  <li><a href="#installing-packages" id="toc-installing-packages" class="nav-link" data-scroll-target="#installing-packages">Installing packages</a></li>
+  <li><a href="#base-r-approach" id="toc-base-r-approach" class="nav-link" data-scroll-target="#base-r-approach"><code>Base R Approach</code></a></li>
+  <li><a href="#tidyversedplyr-approach" id="toc-tidyversedplyr-approach" class="nav-link" data-scroll-target="#tidyversedplyr-approach"><code>Tidyverse/dplyr Approach</code></a></li>
+  <li><a href="#number-summary-and-boxplots" id="toc-number-summary-and-boxplots" class="nav-link" data-scroll-target="#number-summary-and-boxplots">5-Number Summary and Boxplots</a></li>
   </ul></li>
-  <li><a href="#creating-vectors-in-r" id="toc-creating-vectors-in-r" class="nav-link" data-scroll-target="#creating-vectors-in-r">Creating vectors in R</a></li>
   <li><a href="#exercises" id="toc-exercises" class="nav-link" data-scroll-target="#exercises">Exercises</a></li>
-  <li><a href="#submission" id="toc-submission" class="nav-link" data-scroll-target="#submission">Submission</a></li>
-  </ul></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/jmochogi/intermediate-stats/edit/main/labs/lab_1.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/jmochogi/intermediate-stats/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/jmochogi/intermediate-stats/edit/main/labs/lab_2.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/jmochogi/intermediate-stats/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../labs/lab_1.html">Labs</a></li><li class="breadcrumb-item"><a href="../labs/lab_1.html">Lab 1</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../labs/lab_1.html">Labs</a></li><li class="breadcrumb-item"><a href="../labs/lab_2.html">Lab 2</a></li></ol></nav>
 <div class="quarto-title">
+<h1 class="title">Lab 2: Introduction to Quarto, Tidyverse and ggplot2</h1>
   <div class="quarto-categories">
-    <div class="quarto-category">Lab 1</div>
+    <div class="quarto-category">Lab 2</div>
   </div>
   </div>
 
@@ -300,183 +300,135 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<section id="hello-world" class="level1 unnumbered">
-<h1 class="unnumbered"><code>Hello, World!</code></h1>
-<p>It is possible that some of you have heard/seen the phrase, <code>Hello, World!</code>, before. That is usually the first thing you learn in programming, i.e., to learn to write a computer program to print this sentence to screen. In this course, we will not print <code>Hello, World!</code> to the screen. Instead, we will learn how to use R (via RStudio) to perform statistical analyses and to write reports in order to communicate the insights learned from data. While the analysis involves writing computer code, it is in no way going to involve writing computer programs. The goal of today’s lab is to introduce you to R and RStudio. You will learn to access and use RStudio, as well as perform the basic functions regarding statistical analysis. To clarify which is which: R is the name of the programming language itself and RStudio is a convenient interface (Integrated Development Environment or IDE) for working with R. I like to think about R as the car engine and RStudio as a nice driver dashboard. The engine drives the car, but the dashboard makes it easier for the driver to control the car. Most R users work with RStudio.</p>
-<div class="quarto-figure quarto-figure-center">
+<p>In this lab, we introduce an interface known as <a href="https://quarto.org/">quarto</a> that is helpful in creating reproducible reports - documents that allow readers of your work to rerun and verify your analyses. You will recall that in our first lab, you used an R script and had to copy and paste your work to an external place such as a word document for submission. With a quarto file, you don’t have to do this. You can generate (render) documents in different formats (e.g., pdf, word, etc) for sharing and submission. Quarto allows you to write both code and plain text in the same document.</p>
+<p>The code has to be written in what is known as <code>code chunks</code> while the plain (non code) text goes to the white spaces of the page.</p>
+<p>We will also learn to use the <a href="https://ggplot2.tidyverse.org/articles/ggplot2.html">Tidyverse</a> package (introduced and installed during lab 1) to perform basic summary statistics and contrast it with the base R approach (introduced in lab 1).</p>
+<p>If you are using the desktop version of RStudio, you may need to download quarto first. Click <a href="https://quarto.org/docs/get-started/">here</a> to download it.</p>
+<section id="getting-started-with-quarto" class="level2">
+<h2 class="anchored" data-anchor-id="getting-started-with-quarto">Getting Started with Quarto</h2>
+<p>To create your first Quarto file, follow the following steps:</p>
+<p>Go to File&gt;New File &gt; Quarto document. See below:</p>
+<p><img src="images/a4.png" class="img-fluid" width="600"></p>
+<p>Next, save the document as <code>lab_2</code>. Note that if you do this correctly, it will appear as <code>lab_2.qmd</code> in your files pane. The <code>.qmd</code> extension indicates that this is a quarto file.</p>
+<p>Now, click on <code>source mode</code> (top left corner of the document) to see the code behind the document.</p>
+<p>Next, click on render to see what your rendered file looks like.</p>
+<p><strong><em>Before you proceed, delete everything on the document except the YAML header (The section enclosed inside three dashes at top and bottom)</em></strong>.</p>
+</section>
+<section id="parts-of-a-quarto-file" class="level2">
+<h2 class="anchored" data-anchor-id="parts-of-a-quarto-file">Parts of a Quarto file</h2>
+<p>A quarto file has three main parts - the <code>YAML header</code>, <code>plain text</code> and <code>code chunks</code>. See details below:</p>
+<section id="yaml-header" class="level3">
+<h3 class="anchored" data-anchor-id="yaml-header"><code>YAML Header</code></h3>
+<p>The YAML header is the part of the document that contains metadata about the document. It is located at the top of the document and is enclosed by three dashes (<code>---</code>) at the beginning and end. The YAML header contains information such as the title of the document, author name, date, output format, and other options that control how the document is rendered. Here is an example of a YAML header:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode toml code-with-copy"><code class="sourceCode toml"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="dt">---</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="dt">title</span><span class="er">:</span> <span class="dt">"My Analysis Report"</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="dt">author</span><span class="er">:</span> <span class="dt">"John Smith"</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="dt">format</span><span class="er">:</span> <span class="dt">html</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="dt">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Notice that the YAML header is written in a specific format called YAML (YAML Ain’t Markup Language). Each line in the YAML header consists of a key-value pair, where the key is followed by a colon (<code>:</code>) and the value. The keys and values are case-sensitive, and the values can be strings, numbers, booleans, or lists. For example, the <code>title</code> key has a string/character value of “My Analysis Report”, the <code>author</code> key has a string value of “John Smith”, and the <code>format</code> key has a string value of <code>html</code> (no quotes for format).</p>
+</section>
+<section id="plain-text" class="level3">
+<h3 class="anchored" data-anchor-id="plain-text"><code>Plain Text</code></h3>
+<p>Plain text is the part of the document that contains the main content of the report. It is written in Markdown, a lightweight markup language that allows you to format text using simple syntax. For example, when you are in <code>source mode</code> you can use <code>#</code> to create headings, <code>*</code> or <code>_</code> to create emphasis (italic or bold), and <code>-</code> or <code>*</code> to create lists. When in <code>visual mode</code>, it is easier to create these by using point and click options on the menu bar. It is often helpful to switch between the modes.</p>
+</section>
+<section id="code-chunks" class="level3">
+<h3 class="anchored" data-anchor-id="code-chunks"><code>Code Chunks</code></h3>
+<p>Code chunks are the part of the document that contains the R code used to perform the analysis. In source mode, code chunks are enclosed by three back ticks (```) at the beginning and end, and they can be customized using various options. You can add a new chunk by clicking on the green plus sign on the menu bar and selecting <code>R</code> as the language. You can also use the keyboard shortcut <code>Ctrl + Alt + I</code> (Windows) or <code>Cmd + Option + I</code> (Mac) to insert a new code chunk. Source mode if often helpful for spotting errors in your code as it gives a line number for each line of code.</p>
+</section>
+</section>
+<section id="errors-and-code-sequencing" class="level2">
+<h2 class="anchored" data-anchor-id="errors-and-code-sequencing">Errors and Code Sequencing</h2>
+<p>To render means to process your quarto file and generating the output defined (in our case html). By default, rendering fails if your code has some errors, although this can be deactivated. The good news is that quarto will tell you where the errors occurred so you can fix them. If you want to see the exact line where the error occurred, you will need to switch to the <code>source</code> mode if you are in <code>visual</code> mode. It is important to note that code will run line by line starting from top to bottom. This means that your code must be ordered in some way. For example, if you need to use a <code>function</code> from a certain package (e.g., tidyverse), the package must be loaded first before calling that function. To load a package, you use the <code>library()</code> function.</p>
+</section>
+<section id="using-code-chunks" class="level2">
+<h2 class="anchored" data-anchor-id="using-code-chunks">Using Code Chunks</h2>
+<p>In a code chunk, you write code that you want to reproduce in your report. There are other operations such as installing packages that should be done only in the console. For example, running <code>install.packages()</code> in a code chunk means quarto will try to install that package every time you render your document. Recall that we install packages only once in a given project. However, operations such as activating packages (i.e., <code>library()</code>) may be included in the quarto file near the <strong><em>top of the document</em></strong>.</p>
+<p>As a start, let us load the <code>openintro</code> and <code>tidyverse</code> packages. Recall that these packages were already installed (see lab 1). Copy and paste the following code in the first code chunk:</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode toml code-with-copy"><code class="sourceCode toml"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="dt">library</span><span class="er">(</span><span class="dt">openintro</span><span class="er">)</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="dt">library</span><span class="er">(</span><span class="dt">tidyverse</span><span class="er">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="loading-data-from-a-package" class="level2">
+<h2 class="anchored" data-anchor-id="loading-data-from-a-package">Loading Data from a Package</h2>
+<p>To load data stored in a package, we first make sure the package is installed and activated. Then, we used the function <code>data()</code> with the dataset name as the argument. We want to load a dataset called <code>duke_forest</code> from the <code>openintro</code> package. Since we already installed the <code>openintro</code> package and we have already loaded the package (see above), we use the code below:</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode toml code-with-copy"><code class="sourceCode toml"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="dt">data</span><span class="er">(</span><span class="dt">duke_forest</span><span class="er">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>To learn more about this dataset, you can use the <code>?</code> operator as shown below.</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode toml code-with-copy"><code class="sourceCode toml"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="er">?</span><span class="dt">duke_forest</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><strong><em>Question:</em></strong> What can you say about this dataset? In particular, how many observations and how many variables does it have? Identify the variables by type (i.e., numerical or categorical).</p>
+</section>
+<section id="some-analyses" class="level2">
+<h2 class="anchored" data-anchor-id="some-analyses">Some Analyses</h2>
+<p>We are going to use the price variable in the dataset to perform some analyses. Specifically, we will find the measures of center (mean and median) and measures of location such as quartiles and interpret these in context. We will use <code>base R</code> approach as well as functions from the <code>dplyr</code> package (part of the tidyverse package).</p>
+<section id="base-r-approach" class="level3">
+<h3 class="anchored" data-anchor-id="base-r-approach"><code>Base R Approach</code></h3>
+<p>To get the mean of the price variable, we copy and paste the following code in a new code chunk:</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode toml code-with-copy"><code class="sourceCode toml"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="dt">mean</span><span class="er">(</span><span class="dt">duke_forest</span><span class="er">$</span><span class="dt">price</span><span class="er">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>The <code>$</code> operator is used to extract a variable from a data frame. In this case, we are extracting the <code>price</code> variable from the <code>duke_forest</code> data frame.</p>
+</section>
+<section id="tidyversedplyr-approach" class="level3">
+<h3 class="anchored" data-anchor-id="tidyversedplyr-approach"><code>Tidyverse/dplyr Approach</code></h3>
+<p>To find the mean of the price variable using the <code>dplyr</code> package, we use the <code>summarize()</code> function. Copy and paste the following code in a new code chunk:</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode toml code-with-copy"><code class="sourceCode toml"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="dt">duke_forest</span> <span class="er">|&gt;</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>  <span class="dt">summarize</span><span class="er">(</span><span class="dt">mean</span><span class="er">(</span><span class="dt">price</span><span class="er">))</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>The <code>|&gt;</code> symbol is known as the <code>pipe operator</code>. It is used to pass the output of one function to another function. In this case, we are passing the <code>duke_forest</code> data frame to the <code>summarize()</code> function.</p>
+<p>Tidyverse uses the pipe operator a lot. Code written in this manner is (arguably) easier to read than the base R format. Not also that base R code can be quite cumbersome especially as you add more arguments.</p>
+<p>For the most part, will use the Tidyverse workflow in this course.</p>
+<p>To find the median of the price variable using both approaches, we proceed as follows:</p>
+<div class="sourceCode" id="cb7"><pre class="sourceCode toml code-with-copy"><code class="sourceCode toml"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Base R approach</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="dt">median</span><span class="er">(</span><span class="dt">duke_forest</span><span class="er">$</span><span class="dt">price</span><span class="er">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb8"><pre class="sourceCode toml code-with-copy"><code class="sourceCode toml"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Tidyverse approach</span></span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="dt">duke_forest</span> <span class="er">|&gt;</span></span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>  <span class="dt">summarize</span><span class="er">(</span><span class="dt">median</span><span class="er">(</span><span class="dt">price</span><span class="er">))</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>To find the first quartile of the price variable using both approaches, we proceed as follows:</p>
+<div class="sourceCode" id="cb9"><pre class="sourceCode toml code-with-copy"><code class="sourceCode toml"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Base R approach</span></span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="dt">quantile</span><span class="er">(</span><span class="dt">duke_forest</span><span class="er">$</span><span class="dt">price</span><span class="er">,</span> <span class="dt">0.25</span><span class="er">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb10"><pre class="sourceCode toml code-with-copy"><code class="sourceCode toml"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Tidyverse approach</span></span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a><span class="dt">duke_forest</span> <span class="er">|&gt;</span></span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>  <span class="dt">summarize</span><span class="er">(</span><span class="dt">quantile</span><span class="er">(</span><span class="dt">price</span><span class="er">,</span> <span class="dt">0.25</span><span class="er">))</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>To find the third quartile, you can replace <code>0.25</code> with <code>0.75</code> in the code above.</p>
+<p>To find the minimum value of the price variable using both approaches, we proceed as follows:</p>
+<div class="sourceCode" id="cb11"><pre class="sourceCode toml code-with-copy"><code class="sourceCode toml"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Base R approach</span></span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a><span class="dt">min</span><span class="er">(</span><span class="dt">duke_forest</span><span class="er">$</span><span class="dt">price</span><span class="er">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb12"><pre class="sourceCode toml code-with-copy"><code class="sourceCode toml"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Tidyverse approach</span></span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a><span class="dt">duke_forest</span> <span class="er">|&gt;</span></span>
+<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a>  <span class="dt">summarize</span><span class="er">(</span><span class="dt">min</span><span class="er">(</span><span class="dt">price</span><span class="er">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>You can find the maximum value of the price variable by replacing <code>min()</code> with <code>max()</code> accordingly.</p>
+</section>
+<section id="number-summary-and-boxplots" class="level3">
+<h3 class="anchored" data-anchor-id="number-summary-and-boxplots">5-Number Summary and Boxplots</h3>
+<p>A box plot is a graphical representation of the five-number summary of a numerical variable. It shows the minimum, first quartile, median, third quartile, and maximum of the variable. To create a boxplot of the price variable, we can use the <code>boxplot()</code> function as shown below.</p>
+<div class="cell">
+<details open="" class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="fu">boxplot</span>(duke_forest<span class="sc">$</span>price)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output-display">
+<div>
 <figure class="figure">
-<p><img src="images/r_vs_rstudio.png" class="img-fluid figure-img"></p>
-<figcaption>Car Engine and Dashboard</figcaption>
+<p><img src="lab_2_files/figure-html/unnamed-chunk-3-1.png" class="img-fluid figure-img" width="672"></p>
 </figure>
 </div>
-<p>We will work with the cloud (online) version of RStudio.</p>
-<section id="accessing-rstudio-cloud" class="level2 unnumbered">
-<h2 class="unnumbered anchored" data-anchor-id="accessing-rstudio-cloud"><code>Accessing RStudio Cloud</code></h2>
-<p>To access RStudio online, click on the link <a href="https://posit.cloud" class="uri">https://posit.cloud</a> to create an account or to sign in if you already have an account.</p>
+</div>
+</div>
+<p>Note that this code uses base R approach. We will learn to create boxplots using <code>ggplot2</code> (part of the tidyverse package) in a later lab. Based on the box plot above, how would you describe the distribution of the <code>price</code> of the homes?</p>
 </section>
-<section id="creating-a-new-project" class="level2">
-<h2 class="anchored" data-anchor-id="creating-a-new-project">Creating a new Project</h2>
-<p>After signing in to R studio, our next step is to create a new project. You can think of a project as a folder or simply a collection of files/files with a specific goal in mind. Our project will be called “MATH 144 Fall 2025”. The labs that you do will be saved in this project. To create the project, you start by clicking on “New Project” and then change the default name (UNTITLED PROJECT) to “MATH 144 Fall 2025”.</p>
-<p>Yay! You now have your project ready.</p>
-<p>Note that <strong><em>you won’t have to create a project from scratch every time you open RStudio</em></strong>. All labs will be done inside this project that we just created.</p>
-<p>In the next section, we explain the meaning of the various panels on your screen.</p>
-</section>
-<section id="the-r-studio-interface" class="level2">
-<h2 class="anchored" data-anchor-id="the-r-studio-interface">The R studio Interface</h2>
-<p>Your new R studio project interface will look as follows:</p>
-<p><img src="images/a1.jpeg" class="img-fluid"></p>
-<ul>
-<li><p><strong><em>Left Panel:</em></strong> The panel on the left is where the action happens. This panel is called the console. Every time you launch RStudio, it will have the same text at the top of the console telling you the version of R that you’re running. Below that information is the symbol ” &gt; “. This is where you enter your commands. When you enter and execute a command, the output will come right below it. These commands and their syntax have evolved over decades (literally) and now provide what many users feel is a fairly natural way to access data, organize, describe, and invoke statistical computations. Try typing 1 + 1 in the console and hit enter.</p>
-<div class="cell">
-<details open="" class="code-fold">
-<summary>Code</summary>
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="dv">1</span><span class="sc">+</span><span class="dv">1</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] 2</code></pre>
-</div>
-</div></li>
-<li><p><strong><em>Upper Right Panel:</em></strong> The panel in the upper right is called “environment”. It contains, among other things, the history of the actions or commands that you’ve previously entered.</p></li>
-<li><p><strong><em>Bottom Right Panel:</em></strong> The panel in the lower right contains tabs for browsing the files in your project folder, access help files for R functions, install and manage R packages, and inspecting visualizations through the viewer tab. By default, all data visualizations you make will appear directly below the code you used to create them. If you would rather your plots appear in the plots tab, you will need to change your global options.</p></li>
-</ul>
-<section id="creating-a-new-file" class="level3">
-<h3 class="anchored" data-anchor-id="creating-a-new-file">Creating a new file</h3>
-<p>We want to create a new file (an R script) to write our code. To create a new file, click on the “File” menu, then click on “New File”, and then click on “R Script”. A new tab will open in the left panel. This is where you will write your code. You can save this file by clicking on the “File” menu and then clicking on “Save”. Save the file as “lab_1_Explorations”. If you did this correctly, a new file will appear under the files section (lower right) of the project.</p>
-</section>
-<section id="functions-and-arguments" class="level3">
-<h3 class="anchored" data-anchor-id="functions-and-arguments">Functions and Arguments</h3>
-<p>In R, a <code>function</code> is piece of code that performs a specific task. Functions take inputs (called arguments) and return outputs. For example, the <code>mean()</code> function takes a series of numerical values as the input and returns their average. Try running the following code:</p>
-<div class="cell">
-<details open="" class="code-fold">
-<summary>Code</summary>
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">mean</span>(<span class="dv">3</span>,<span class="dv">4</span>,<span class="dv">5</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] 3</code></pre>
-</div>
-</div>
-<p>The inputs of a function are called <code>arguments</code>. Here, we have three arguments (3, 4, and 5). Note that the arguments are separated by commas. The general syntax for a function is <code>function_name(argument1, argument2, ...)</code>. In this case, <code>mean</code> is the function name and <code>3</code>, <code>4</code>, and <code>5</code> are the arguments.</p>
-<p>You will learn more about functions and arguments as we progress through the course. For now, it is important to understand that functions are the building blocks of R programming, and they allow you to perform complex tasks with simple commands.</p>
-</section>
-</section>
-<section id="r-packages" class="level2">
-<h2 class="anchored" data-anchor-id="r-packages">R packages</h2>
-<p>R is an open-source programming language, meaning that users can contribute packages that make our lives easier, and we can use them for free. Packages are simply pre-written code meant to serve specific purposes and may contain other packages inside them. Packages may also contain data sets. Packages are stored in a directory called <code>Library</code>. For most labs in this course, we will use the following two packages:</p>
-<ul>
-<li><p>The <strong>tidyverse package</strong> is a very popular “umbrella” package which houses a suite of many different R packages: for data wrangling (including tidying) and data visualization.</p></li>
-<li><p>The <strong>openintro package</strong> for data and custom functions with the openintro resources. You will notice that the readings frequently refer to data contained in the openintro Package. This is the package.</p></li>
-</ul>
-<section id="installing-packages" class="level3">
-<h3 class="anchored" data-anchor-id="installing-packages">Installing packages</h3>
-<p>We now want to install packages in our project. To install a package in R, we can use the function <code>install.packages</code> and the package name as the argument as shown below:</p>
-<pre><code>install.packages("package name")</code></pre>
-<p>We run this command in the console because we only need to install packages once per project. After installing a package, we need to load (activate) it each time we relaunch RStudio.</p>
-<p>To install <strong>tidyverse</strong>, run the following code in the <strong>console</strong>:</p>
-<div class="sourceCode" id="cb6"><pre class="sourceCode toml code-with-copy"><code class="sourceCode toml"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="dt">install.packages</span><span class="er">(</span><span class="dt">"tidyverse"</span><span class="er">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p><strong>Exercise:</strong> What code would you use to install the <strong>openintro</strong> package? Install the package.</p>
-<p>Note: To launch (activate) the <code>tidyverse</code> package, we use the following command:</p>
-<div class="sourceCode" id="cb7"><pre class="sourceCode toml code-with-copy"><code class="sourceCode toml"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="dt">library</span><span class="er">(</span><span class="dt">tidyverse</span><span class="er">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p><strong><em>Why Tidyverse?</em></strong> We are choosing to use the tidyverse package collection because it consists of a set of packages necessary for different aspects of working with data, anything from loading data to wrangling data to visualizing data to analyzing data. Additionally, these packages share common philosophies and are designed to work together. The tidyverse workflow makes coding feel like a natural language. You can find more about the packages in the tidyverse at tidyverse.org.</p>
-</section>
-</section>
-<section id="creating-vectors-in-r" class="level2">
-<h2 class="anchored" data-anchor-id="creating-vectors-in-r">Creating vectors in R</h2>
-<p>Suppose we want to find the mean of the numbers 23,24,26,19,18,25,21, and 39. You can use the command <code>mean(23,24,...)</code>, but this might not be the most efficient way if the list is long. A common thing to do is to create a <code>container</code> to put all these numbers. Such a container is known as a <code>vector</code>. Specifically, this is a <code>numerical vector</code>. See code below for creating a vector consisting of the above list:</p>
-<div class="cell">
-<details open="" class="code-fold">
-<summary>Code</summary>
-<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>x <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">23</span>,<span class="dv">24</span>,<span class="dv">26</span>,<span class="dv">19</span>,<span class="dv">18</span>,<span class="dv">25</span>,<span class="dv">21</span>, <span class="dv">39</span>) </span>
-<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="co"># We use the symbol '&lt;-' for assigning elements to an object. </span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
-</div>
-<p>Here, we are creating a vector and storing it in an <code>object</code> called <code>x</code>. The symbols <code>&lt;-</code> is used for assignment. In R, we use a # to designate a <strong><em>comment</em></strong> (text that should not be evaluated as code). In above chunk, the text after # is a comment. Comments are a good way to document your code.</p>
-<p>To find the mean of those numbers, we simply run the command <code>mean(x)</code> as shown below.</p>
-<div class="cell">
-<details open="" class="code-fold">
-<summary>Code</summary>
-<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="fu">mean</span>(x)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] 24.375</code></pre>
-</div>
-</div>
-<p>To find the median of the numbers, we run the command <code>median(x)</code> as shown below.</p>
-<div class="cell">
-<details open="" class="code-fold">
-<summary>Code</summary>
-<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="fu">median</span>(x)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] 23.5</code></pre>
-</div>
-</div>
-<p>We can also create a <code>string object</code> (i.e., a series of non-numerical elements or characters). We use quotes for string characters. See below:</p>
-<div class="cell">
-<details open="" class="code-fold">
-<summary>Code</summary>
-<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>y <span class="ot">&lt;-</span> <span class="fu">c</span>( <span class="st">"Jane"</span>, <span class="st">"John"</span>, <span class="st">"Jess"</span>, <span class="st">"Jeff"</span>, <span class="st">"Joe"</span>, <span class="st">"Holli"</span>, <span class="st">"Henry"</span>, <span class="st">"Han"</span>) </span>
-<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a><span class="co"># We use quotes for strings.</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
-</div>
-<p>Now, try to run the command <strong>mean(y)</strong>:</p>
-<div class="cell">
-<details open="" class="code-fold">
-<summary>Code</summary>
-<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="fu">mean</span>(y)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
-<div class="cell-output cell-output-stderr">
-<pre><code>Warning in mean.default(y): argument is not numeric or logical: returning NA</code></pre>
-</div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] NA</code></pre>
-</div>
-</div>
-<p>Did you get an error message in red?</p>
-<p>Well, programming languages generally produce error messages when you try to perform an inappropriate operation or if there is a mistake in the code. Error messages are a good way to learn what you did wrong. In this case, the mean/average of the object <code>y</code> does not make sense because the entries of <code>y</code> are not numerical.</p>
-<p>You can, however, perform other operations on y. For example, you can use the <code>table</code> function to tabulate the entries in <code>y</code>. This may be useful in cases where one is interested in the frequencies of each entry. Run the command below:</p>
-<div class="cell">
-<details open="" class="code-fold">
-<summary>Code</summary>
-<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="fu">table</span>(y)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
-<div class="cell-output cell-output-stdout">
-<pre><code>y
-  Han Henry Holli  Jane  Jeff  Jess   Joe  John 
-    1     1     1     1     1     1     1     1 </code></pre>
-</div>
-</div>
-<p>This is known as a frequency table. For example, we see that there is only one <code>Jane</code> entry in <code>y</code>. While you could easily count the number of <code>Jane</code> entries in y, the <code>table</code> function is useful when you have bigger data sets.</p>
-<p>Delete (or comment out) the <code>mean(y)</code> that you had written earlier.</p>
 </section>
 <section id="exercises" class="level2">
 <h2 class="anchored" data-anchor-id="exercises">Exercises</h2>
+<p>Create a new quarto file and save it as <code>lab_2_Exe</code>. Do not use the same quarto file we used during class explorations. Answer the following questions in the quarto file that you create. When you are done, render the document to generate a PDF. To generate a pdf, you will have to change <code>html</code> format to <code>pdf</code> in the <code>YAML</code> header. Submit the rendered pdf file on Canvas.</p>
 <ol type="1">
-<li><p>Create an object (name it income) containing the following numerical elements: 750, 810, 680, 1200, 1500, 1399,1525.</p></li>
-<li><p>Use R to find the mean and the median of the values in #1 above.</p></li>
-</ol>
-</section>
-<section id="submission" class="level2">
-<h2 class="anchored" data-anchor-id="submission">Submission</h2>
-<div class="callout callout-style-default callout-important callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Submission Checklist
-</div>
-</div>
-<div class="callout-body-container callout-body">
+<li><p>Load the openintro and tidyverse packages in your quarto file.</p></li>
+<li><p>Load the <code>loan50</code> dataset from the openintro package. Briefly describe the dataset. In particular, how many observations are in this dataset? What are the observations/cases?</p></li>
+<li><p>How many variables are in the dataset? Name any two numerical variables and any two categorical ones.</p></li>
+<li><p>Using the <code>Tidyverse/dplyr</code> package, compute the following summary statistics for the <code>annual_income</code> variable in the dataset. Use separate code chunks for each statistic.</p>
 <ul>
-<li>Attempt all questions</li>
-<li>Copy and past your work into a word document. Be sure to number your work properly.</li>
-<li>Submit the word document to canvas under Lab 1 Assignment.</li>
-</ul>
-</div>
-</div>
+<li>Mean</li>
+<li>Median</li>
+</ul></li>
+<li><p>Which measure of center (mean or median) do you think is more appropriate for describing the typical annual income? Briefly explain your answer.</p></li>
+<li><p>Find the 5-number summary of the <code>annual_income</code> variable then create a boxplot of the variable. Briefly describe the distribution of the variable based on the boxplot.</p></li>
+</ol>
 
 
-</section>
 </section>
 
 </main> <!-- /main -->
@@ -1043,14 +995,11 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../course-faq.html" class="pagination-link" aria-label="FAQ">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">FAQ</span>
+      <a href="../labs/lab_1.html" class="pagination-link" aria-label="Lab 1">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Lab 1</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../labs/lab_2.html" class="pagination-link" aria-label="Lab 2">
-        <span class="nav-page-text">Lab 2</span> <i class="bi bi-arrow-right-short"></i>
-      </a>
   </div>
 </nav>
 </div> <!-- /content -->
@@ -1061,7 +1010,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </div>   
     <div class="nav-footer-center">
       &nbsp;
-    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/jmochogi/intermediate-stats/edit/main/labs/lab_1.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/jmochogi/intermediate-stats/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/jmochogi/intermediate-stats/edit/main/labs/lab_2.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/jmochogi/intermediate-stats/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
 <p>This page is built with <a href="https://quarto.org/">Quarto</a>.</p>
 </div>
