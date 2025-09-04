@@ -18,7 +18,7 @@ It is possible that some of you have heard/seen the phrase, `Hello, World!`, bef
 
 ![Car Engine and Dashboard](images/r_vs_rstudio.png)
 
-We will work with the cloud (online) version of RStudio. 
+We will work with the cloud (online) version of RStudio.
 
 ## `Accessing RStudio Cloud` {.unnumbered}
 
@@ -54,7 +54,6 @@ Your new R studio project interface will look as follows:
 
 We want to create a new file (an R script) to write our code. To create a new file, click on the "File" menu, then click on "New File", and then click on "R Script". A new tab will open in the left panel. This is where you will write your code. You can save this file by clicking on the "File" menu and then clicking on "Save". Save the file as "lab_1_Explorations". If you did this correctly, a new file will appear under the files section (lower right) of the project.
 
-
 ### Functions and Arguments
 
 In R, a `function` is piece of code that performs a specific task. Functions take inputs (called arguments) and return outputs. For example, the `mean()` function takes a series of numerical values as the input and returns their average. Try running the following code:
@@ -63,8 +62,7 @@ In R, a `function` is piece of code that performs a specific task. Functions tak
 mean(3,4,5)
 ```
 
-The inputs of a function are called `arguments`. Here, we have three arguments (3, 4, and 5). Note that the arguments are separated by commas.
-The general syntax for a function is `function_name(argument1, argument2, ...)`. In this case, `mean` is the function name and `3`, `4`, and `5` are the arguments.
+The inputs of a function are called `arguments`. Here, we have three arguments (3, 4, and 5). Note that the arguments are separated by commas. The general syntax for a function is `function_name(argument1, argument2, ...)`. In this case, `mean` is the function name and `3`, `4`, and `5` are the arguments.
 
 You will learn more about functions and arguments as we progress through the course. For now, it is important to understand that functions are the building blocks of R programming, and they allow you to perform complex tasks with simple commands.
 
@@ -83,6 +81,7 @@ We now want to install packages in our project. To install a package in R, we ca
 ```         
 install.packages("package name")
 ```
+
 We run this command in the console because we only need to install packages once per project. After installing a package, we need to load (activate) it each time we relaunch RStudio.
 
 To install **tidyverse**, run the following code in the **console**:
