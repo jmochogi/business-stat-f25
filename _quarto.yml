@@ -6,10 +6,10 @@ website:
   page-navigation: true
   title: "MATH 144 - Business Statistics"
   description: "Homepage for MATH 144 - Business Statistics, Fall 205."
-  site-url: "https://jmochogi.github.io/intermediate-stats/"
+  site-url: "https://jmochogi.github.io/business-stat-f25/"
 
-  repo-url: https://github.com/jmochogi/intermediate-stats
-  repo-actions: [edit, issue]
+  repo-url: https://github.com/jmochogi/business-stat-f25
+  #repo-actions: [edit, issue]
 
   open-graph: true
   twitter-card:
