@@ -1,5 +1,5 @@
 ---
-categories: "Lab 3"
+categories: "labs"
 title: "Lab 3: Data Visualization with ggplot2"
 execute:
   eval: true
